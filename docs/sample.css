@@ -3,11 +3,7 @@ html {
 }
 
 body {
-  height: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
 
   animation: rainbowGradient 1s linear infinite;
 }
