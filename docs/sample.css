@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+
 html {
+  font-family: "Bungee Shade", cursive;
   height: 100%;
 }
 
 body {
   height: 100%;
   margin: 0;
-
+  justify-content: center;
   animation: rainbowGradient 1s linear infinite;
 }
 
@@ -13,6 +16,7 @@ h1 {
   height: inherit;
   color: white;
   white-space: nowrap;
+  margin: 0;
 }
 
 @keyframes rainbowGradient {
