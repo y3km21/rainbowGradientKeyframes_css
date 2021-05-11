@@ -4,8 +4,15 @@ html {
 
 body {
   height: 100%;
+  margin: 0;
 
   animation: rainbowGradient 1s linear infinite;
+}
+
+h1 {
+  height: inherit;
+  color: white;
+  white-space: nowrap;
 }
 
 @keyframes rainbowGradient {
