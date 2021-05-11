@@ -15,10 +15,10 @@ body {
 }
 
 h1 {
-  height: inherit;
   color: white;
   white-space: nowrap;
   margin: 0;
+  text-align: center;
 }
 
 @keyframes rainbowGradient {
