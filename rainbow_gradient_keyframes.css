@@ -1,103 +1,1408 @@
-@keyframes rainbowGradient{
-0% { background: radial-gradient( circle,red 0%,orange 14%,yellow 28%,green 42%,blue 57%,indigo 71%,violet 85%,red 100%);}
-1% { background: radial-gradient( circle,red 0%,orange 13%,yellow 27%,green 41%,blue 56%,indigo 70%,violet 84%,red 99%,orange 100%);}
-2% { background: radial-gradient( circle,red 0%,orange 12%,yellow 26%,green 40%,blue 55%,indigo 69%,violet 83%,red 98%,orange 100%);}
-3% { background: radial-gradient( circle,red 0%,orange 11%,yellow 25%,green 39%,blue 54%,indigo 68%,violet 82%,red 97%,orange 100%);}
-4% { background: radial-gradient( circle,red 0%,orange 10%,yellow 24%,green 38%,blue 53%,indigo 67%,violet 81%,red 96%,orange 100%);}
-5% { background: radial-gradient( circle,red 0%,orange 9%,yellow 23%,green 37%,blue 52%,indigo 66%,violet 80%,red 95%,orange 100%);}
-6% { background: radial-gradient( circle,red 0%,orange 8%,yellow 22%,green 36%,blue 51%,indigo 65%,violet 79%,red 94%,orange 100%);}
-7% { background: radial-gradient( circle,red 0%,orange 7%,yellow 21%,green 35%,blue 50%,indigo 64%,violet 78%,red 93%,orange 100%);}
-8% { background: radial-gradient( circle,red 0%,orange 6%,yellow 20%,green 34%,blue 49%,indigo 63%,violet 77%,red 92%,orange 100%);}
-9% { background: radial-gradient( circle,red 0%,orange 5%,yellow 19%,green 33%,blue 48%,indigo 62%,violet 76%,red 91%,orange 100%);}
-10% { background: radial-gradient( circle,red 0%,orange 4%,yellow 18%,green 32%,blue 47%,indigo 61%,violet 75%,red 90%,orange 100%);}
-11% { background: radial-gradient( circle,red 0%,orange 3%,yellow 17%,green 31%,blue 46%,indigo 60%,violet 74%,red 89%,orange 100%);}
-12% { background: radial-gradient( circle,red 0%,orange 2%,yellow 16%,green 30%,blue 45%,indigo 59%,violet 73%,red 88%,orange 100%);}
-13% { background: radial-gradient( circle,red 0%,orange 1%,yellow 15%,green 29%,blue 44%,indigo 58%,violet 72%,red 87%,orange 100%);}
-14% { background: radial-gradient( circle,orange 0%,yellow 14%,green 28%,blue 43%,indigo 57%,violet 71%,red 86%,orange 100%);}
-15% { background: radial-gradient( circle,orange 0%,yellow 13%,green 27%,blue 42%,indigo 56%,violet 70%,red 85%,orange 99%,yellow 100%);}
-16% { background: radial-gradient( circle,orange 0%,yellow 12%,green 26%,blue 41%,indigo 55%,violet 69%,red 84%,orange 98%,yellow 100%);}
-17% { background: radial-gradient( circle,orange 0%,yellow 11%,green 25%,blue 40%,indigo 54%,violet 68%,red 83%,orange 97%,yellow 100%);}
-18% { background: radial-gradient( circle,orange 0%,yellow 10%,green 24%,blue 39%,indigo 53%,violet 67%,red 82%,orange 96%,yellow 100%);}
-19% { background: radial-gradient( circle,orange 0%,yellow 9%,green 23%,blue 38%,indigo 52%,violet 66%,red 81%,orange 95%,yellow 100%);}
-20% { background: radial-gradient( circle,orange 0%,yellow 8%,green 22%,blue 37%,indigo 51%,violet 65%,red 80%,orange 94%,yellow 100%);}
-21% { background: radial-gradient( circle,orange 0%,yellow 7%,green 21%,blue 36%,indigo 50%,violet 64%,red 79%,orange 93%,yellow 100%);}
-22% { background: radial-gradient( circle,orange 0%,yellow 6%,green 20%,blue 35%,indigo 49%,violet 63%,red 78%,orange 92%,yellow 100%);}
-23% { background: radial-gradient( circle,orange 0%,yellow 5%,green 19%,blue 34%,indigo 48%,violet 62%,red 77%,orange 91%,yellow 100%);}
-24% { background: radial-gradient( circle,orange 0%,yellow 4%,green 18%,blue 33%,indigo 47%,violet 61%,red 76%,orange 90%,yellow 100%);}
-25% { background: radial-gradient( circle,orange 0%,yellow 3%,green 17%,blue 32%,indigo 46%,violet 60%,red 75%,orange 89%,yellow 100%);}
-26% { background: radial-gradient( circle,orange 0%,yellow 2%,green 16%,blue 31%,indigo 45%,violet 59%,red 74%,orange 88%,yellow 100%);}
-27% { background: radial-gradient( circle,orange 0%,yellow 1%,green 15%,blue 30%,indigo 44%,violet 58%,red 73%,orange 87%,yellow 100%);}
-28% { background: radial-gradient( circle,yellow 0%,green 14%,blue 29%,indigo 43%,violet 57%,red 72%,orange 86%,yellow 100%);}
-29% { background: radial-gradient( circle,yellow 0%,green 13%,blue 28%,indigo 42%,violet 56%,red 71%,orange 85%,yellow 99%,green 100%);}
-30% { background: radial-gradient( circle,yellow 0%,green 12%,blue 27%,indigo 41%,violet 55%,red 70%,orange 84%,yellow 98%,green 100%);}
-31% { background: radial-gradient( circle,yellow 0%,green 11%,blue 26%,indigo 40%,violet 54%,red 69%,orange 83%,yellow 97%,green 100%);}
-32% { background: radial-gradient( circle,yellow 0%,green 10%,blue 25%,indigo 39%,violet 53%,red 68%,orange 82%,yellow 96%,green 100%);}
-33% { background: radial-gradient( circle,yellow 0%,green 9%,blue 24%,indigo 38%,violet 52%,red 67%,orange 81%,yellow 95%,green 100%);}
-34% { background: radial-gradient( circle,yellow 0%,green 8%,blue 23%,indigo 37%,violet 51%,red 66%,orange 80%,yellow 94%,green 100%);}
-35% { background: radial-gradient( circle,yellow 0%,green 7%,blue 22%,indigo 36%,violet 50%,red 65%,orange 79%,yellow 93%,green 100%);}
-36% { background: radial-gradient( circle,yellow 0%,green 6%,blue 21%,indigo 35%,violet 49%,red 64%,orange 78%,yellow 92%,green 100%);}
-37% { background: radial-gradient( circle,yellow 0%,green 5%,blue 20%,indigo 34%,violet 48%,red 63%,orange 77%,yellow 91%,green 100%);}
-38% { background: radial-gradient( circle,yellow 0%,green 4%,blue 19%,indigo 33%,violet 47%,red 62%,orange 76%,yellow 90%,green 100%);}
-39% { background: radial-gradient( circle,yellow 0%,green 3%,blue 18%,indigo 32%,violet 46%,red 61%,orange 75%,yellow 89%,green 100%);}
-40% { background: radial-gradient( circle,yellow 0%,green 2%,blue 17%,indigo 31%,violet 45%,red 60%,orange 74%,yellow 88%,green 100%);}
-41% { background: radial-gradient( circle,yellow 0%,green 1%,blue 16%,indigo 30%,violet 44%,red 59%,orange 73%,yellow 87%,green 100%);}
-42% { background: radial-gradient( circle,green 0%,blue 15%,indigo 29%,violet 43%,red 58%,orange 72%,yellow 86%,green 100%);}
-43% { background: radial-gradient( circle,green 0%,blue 14%,indigo 28%,violet 42%,red 57%,orange 71%,yellow 85%,green 99%,blue 100%);}
-44% { background: radial-gradient( circle,green 0%,blue 13%,indigo 27%,violet 41%,red 56%,orange 70%,yellow 84%,green 98%,blue 100%);}
-45% { background: radial-gradient( circle,green 0%,blue 12%,indigo 26%,violet 40%,red 55%,orange 69%,yellow 83%,green 97%,blue 100%);}
-46% { background: radial-gradient( circle,green 0%,blue 11%,indigo 25%,violet 39%,red 54%,orange 68%,yellow 82%,green 96%,blue 100%);}
-47% { background: radial-gradient( circle,green 0%,blue 10%,indigo 24%,violet 38%,red 53%,orange 67%,yellow 81%,green 95%,blue 100%);}
-48% { background: radial-gradient( circle,green 0%,blue 9%,indigo 23%,violet 37%,red 52%,orange 66%,yellow 80%,green 94%,blue 100%);}
-49% { background: radial-gradient( circle,green 0%,blue 8%,indigo 22%,violet 36%,red 51%,orange 65%,yellow 79%,green 93%,blue 100%);}
-50% { background: radial-gradient( circle,green 0%,blue 7%,indigo 21%,violet 35%,red 50%,orange 64%,yellow 78%,green 92%,blue 100%);}
-51% { background: radial-gradient( circle,green 0%,blue 6%,indigo 20%,violet 34%,red 49%,orange 63%,yellow 77%,green 91%,blue 100%);}
-52% { background: radial-gradient( circle,green 0%,blue 5%,indigo 19%,violet 33%,red 48%,orange 62%,yellow 76%,green 90%,blue 100%);}
-53% { background: radial-gradient( circle,green 0%,blue 4%,indigo 18%,violet 32%,red 47%,orange 61%,yellow 75%,green 89%,blue 100%);}
-54% { background: radial-gradient( circle,green 0%,blue 3%,indigo 17%,violet 31%,red 46%,orange 60%,yellow 74%,green 88%,blue 100%);}
-55% { background: radial-gradient( circle,green 0%,blue 2%,indigo 16%,violet 30%,red 45%,orange 59%,yellow 73%,green 87%,blue 100%);}
-56% { background: radial-gradient( circle,green 0%,blue 1%,indigo 15%,violet 29%,red 44%,orange 58%,yellow 72%,green 86%,blue 100%);}
-57% { background: radial-gradient( circle,blue 0%,indigo 14%,violet 28%,red 43%,orange 57%,yellow 71%,green 85%,blue 100%);}
-58% { background: radial-gradient( circle,blue 0%,indigo 13%,violet 27%,red 42%,orange 56%,yellow 70%,green 84%,blue 99%,indigo 100%);}
-59% { background: radial-gradient( circle,blue 0%,indigo 12%,violet 26%,red 41%,orange 55%,yellow 69%,green 83%,blue 98%,indigo 100%);}
-60% { background: radial-gradient( circle,blue 0%,indigo 11%,violet 25%,red 40%,orange 54%,yellow 68%,green 82%,blue 97%,indigo 100%);}
-61% { background: radial-gradient( circle,blue 0%,indigo 10%,violet 24%,red 39%,orange 53%,yellow 67%,green 81%,blue 96%,indigo 100%);}
-62% { background: radial-gradient( circle,blue 0%,indigo 9%,violet 23%,red 38%,orange 52%,yellow 66%,green 80%,blue 95%,indigo 100%);}
-63% { background: radial-gradient( circle,blue 0%,indigo 8%,violet 22%,red 37%,orange 51%,yellow 65%,green 79%,blue 94%,indigo 100%);}
-64% { background: radial-gradient( circle,blue 0%,indigo 7%,violet 21%,red 36%,orange 50%,yellow 64%,green 78%,blue 93%,indigo 100%);}
-65% { background: radial-gradient( circle,blue 0%,indigo 6%,violet 20%,red 35%,orange 49%,yellow 63%,green 77%,blue 92%,indigo 100%);}
-66% { background: radial-gradient( circle,blue 0%,indigo 5%,violet 19%,red 34%,orange 48%,yellow 62%,green 76%,blue 91%,indigo 100%);}
-67% { background: radial-gradient( circle,blue 0%,indigo 4%,violet 18%,red 33%,orange 47%,yellow 61%,green 75%,blue 90%,indigo 100%);}
-68% { background: radial-gradient( circle,blue 0%,indigo 3%,violet 17%,red 32%,orange 46%,yellow 60%,green 74%,blue 89%,indigo 100%);}
-69% { background: radial-gradient( circle,blue 0%,indigo 2%,violet 16%,red 31%,orange 45%,yellow 59%,green 73%,blue 88%,indigo 100%);}
-70% { background: radial-gradient( circle,blue 0%,indigo 1%,violet 15%,red 30%,orange 44%,yellow 58%,green 72%,blue 87%,indigo 100%);}
-71% { background: radial-gradient( circle,indigo 0%,violet 14%,red 29%,orange 43%,yellow 57%,green 71%,blue 86%,indigo 100%);}
-72% { background: radial-gradient( circle,indigo 0%,violet 13%,red 28%,orange 42%,yellow 56%,green 70%,blue 85%,indigo 99%,violet 100%);}
-73% { background: radial-gradient( circle,indigo 0%,violet 12%,red 27%,orange 41%,yellow 55%,green 69%,blue 84%,indigo 98%,violet 100%);}
-74% { background: radial-gradient( circle,indigo 0%,violet 11%,red 26%,orange 40%,yellow 54%,green 68%,blue 83%,indigo 97%,violet 100%);}
-75% { background: radial-gradient( circle,indigo 0%,violet 10%,red 25%,orange 39%,yellow 53%,green 67%,blue 82%,indigo 96%,violet 100%);}
-76% { background: radial-gradient( circle,indigo 0%,violet 9%,red 24%,orange 38%,yellow 52%,green 66%,blue 81%,indigo 95%,violet 100%);}
-77% { background: radial-gradient( circle,indigo 0%,violet 8%,red 23%,orange 37%,yellow 51%,green 65%,blue 80%,indigo 94%,violet 100%);}
-78% { background: radial-gradient( circle,indigo 0%,violet 7%,red 22%,orange 36%,yellow 50%,green 64%,blue 79%,indigo 93%,violet 100%);}
-79% { background: radial-gradient( circle,indigo 0%,violet 6%,red 21%,orange 35%,yellow 49%,green 63%,blue 78%,indigo 92%,violet 100%);}
-80% { background: radial-gradient( circle,indigo 0%,violet 5%,red 20%,orange 34%,yellow 48%,green 62%,blue 77%,indigo 91%,violet 100%);}
-81% { background: radial-gradient( circle,indigo 0%,violet 4%,red 19%,orange 33%,yellow 47%,green 61%,blue 76%,indigo 90%,violet 100%);}
-82% { background: radial-gradient( circle,indigo 0%,violet 3%,red 18%,orange 32%,yellow 46%,green 60%,blue 75%,indigo 89%,violet 100%);}
-83% { background: radial-gradient( circle,indigo 0%,violet 2%,red 17%,orange 31%,yellow 45%,green 59%,blue 74%,indigo 88%,violet 100%);}
-84% { background: radial-gradient( circle,indigo 0%,violet 1%,red 16%,orange 30%,yellow 44%,green 58%,blue 73%,indigo 87%,violet 100%);}
-85% { background: radial-gradient( circle,violet 0%,red 15%,orange 29%,yellow 43%,green 57%,blue 72%,indigo 86%,violet 100%);}
-86% { background: radial-gradient( circle,violet 0%,red 14%,orange 28%,yellow 42%,green 56%,blue 71%,indigo 85%,violet 99%,red 100%);}
-87% { background: radial-gradient( circle,violet 0%,red 13%,orange 27%,yellow 41%,green 55%,blue 70%,indigo 84%,violet 98%,red 100%);}
-88% { background: radial-gradient( circle,violet 0%,red 12%,orange 26%,yellow 40%,green 54%,blue 69%,indigo 83%,violet 97%,red 100%);}
-89% { background: radial-gradient( circle,violet 0%,red 11%,orange 25%,yellow 39%,green 53%,blue 68%,indigo 82%,violet 96%,red 100%);}
-90% { background: radial-gradient( circle,violet 0%,red 10%,orange 24%,yellow 38%,green 52%,blue 67%,indigo 81%,violet 95%,red 100%);}
-91% { background: radial-gradient( circle,violet 0%,red 9%,orange 23%,yellow 37%,green 51%,blue 66%,indigo 80%,violet 94%,red 100%);}
-92% { background: radial-gradient( circle,violet 0%,red 8%,orange 22%,yellow 36%,green 50%,blue 65%,indigo 79%,violet 93%,red 100%);}
-93% { background: radial-gradient( circle,violet 0%,red 7%,orange 21%,yellow 35%,green 49%,blue 64%,indigo 78%,violet 92%,red 100%);}
-94% { background: radial-gradient( circle,violet 0%,red 6%,orange 20%,yellow 34%,green 48%,blue 63%,indigo 77%,violet 91%,red 100%);}
-95% { background: radial-gradient( circle,violet 0%,red 5%,orange 19%,yellow 33%,green 47%,blue 62%,indigo 76%,violet 90%,red 100%);}
-96% { background: radial-gradient( circle,violet 0%,red 4%,orange 18%,yellow 32%,green 46%,blue 61%,indigo 75%,violet 89%,red 100%);}
-97% { background: radial-gradient( circle,violet 0%,red 3%,orange 17%,yellow 31%,green 45%,blue 60%,indigo 74%,violet 88%,red 100%);}
-98% { background: radial-gradient( circle,violet 0%,red 2%,orange 16%,yellow 30%,green 44%,blue 59%,indigo 73%,violet 87%,red 100%);}
-99% { background: radial-gradient( circle,violet 0%,red 1%,orange 15%,yellow 29%,green 43%,blue 58%,indigo 72%,violet 86%,red 100%);}
-100% { background: radial-gradient( circle,red 0%,orange 14%,yellow 28%,green 42%,blue 57%,indigo 71%,violet 85%,red 100%);}
-}%
+@keyframes rainbowGradient {
+  0% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 14%,
+      yellow 28%,
+      green 42%,
+      blue 57%,
+      indigo 71%,
+      violet 85%,
+      red 100%
+    );
+  }
+  1% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 13%,
+      yellow 27%,
+      green 41%,
+      blue 56%,
+      indigo 70%,
+      violet 84%,
+      red 99%,
+      orange 100%
+    );
+  }
+  2% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 12%,
+      yellow 26%,
+      green 40%,
+      blue 55%,
+      indigo 69%,
+      violet 83%,
+      red 98%,
+      orange 100%
+    );
+  }
+  3% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 11%,
+      yellow 25%,
+      green 39%,
+      blue 54%,
+      indigo 68%,
+      violet 82%,
+      red 97%,
+      orange 100%
+    );
+  }
+  4% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 10%,
+      yellow 24%,
+      green 38%,
+      blue 53%,
+      indigo 67%,
+      violet 81%,
+      red 96%,
+      orange 100%
+    );
+  }
+  5% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 9%,
+      yellow 23%,
+      green 37%,
+      blue 52%,
+      indigo 66%,
+      violet 80%,
+      red 95%,
+      orange 100%
+    );
+  }
+  6% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 8%,
+      yellow 22%,
+      green 36%,
+      blue 51%,
+      indigo 65%,
+      violet 79%,
+      red 94%,
+      orange 100%
+    );
+  }
+  7% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 7%,
+      yellow 21%,
+      green 35%,
+      blue 50%,
+      indigo 64%,
+      violet 78%,
+      red 93%,
+      orange 100%
+    );
+  }
+  8% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 6%,
+      yellow 20%,
+      green 34%,
+      blue 49%,
+      indigo 63%,
+      violet 77%,
+      red 92%,
+      orange 100%
+    );
+  }
+  9% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 5%,
+      yellow 19%,
+      green 33%,
+      blue 48%,
+      indigo 62%,
+      violet 76%,
+      red 91%,
+      orange 100%
+    );
+  }
+  10% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 4%,
+      yellow 18%,
+      green 32%,
+      blue 47%,
+      indigo 61%,
+      violet 75%,
+      red 90%,
+      orange 100%
+    );
+  }
+  11% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 3%,
+      yellow 17%,
+      green 31%,
+      blue 46%,
+      indigo 60%,
+      violet 74%,
+      red 89%,
+      orange 100%
+    );
+  }
+  12% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 2%,
+      yellow 16%,
+      green 30%,
+      blue 45%,
+      indigo 59%,
+      violet 73%,
+      red 88%,
+      orange 100%
+    );
+  }
+  13% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 1%,
+      yellow 15%,
+      green 29%,
+      blue 44%,
+      indigo 58%,
+      violet 72%,
+      red 87%,
+      orange 100%
+    );
+  }
+  14% {
+    background: radial-gradient(
+      circle,
+      orange 0%,
+      yellow 14%,
+      green 28%,
+      blue 43%,
+      indigo 57%,
+      violet 71%,
+      red 86%,
+      orange 100%
+    );
+  }
+  15% {
+    background: radial-gradient(
+      circle,
+      orange 0%,
+      yellow 13%,
+      green 27%,
+      blue 42%,
+      indigo 56%,
+      violet 70%,
+      red 85%,
+      orange 99%,
+      yellow 100%
+    );
+  }
+  16% {
+    background: radial-gradient(
+      circle,
+      orange 0%,
+      yellow 12%,
+      green 26%,
+      blue 41%,
+      indigo 55%,
+      violet 69%,
+      red 84%,
+      orange 98%,
+      yellow 100%
+    );
+  }
+  17% {
+    background: radial-gradient(
+      circle,
+      orange 0%,
+      yellow 11%,
+      green 25%,
+      blue 40%,
+      indigo 54%,
+      violet 68%,
+      red 83%,
+      orange 97%,
+      yellow 100%
+    );
+  }
+  18% {
+    background: radial-gradient(
+      circle,
+      orange 0%,
+      yellow 10%,
+      green 24%,
+      blue 39%,
+      indigo 53%,
+      violet 67%,
+      red 82%,
+      orange 96%,
+      yellow 100%
+    );
+  }
+  19% {
+    background: radial-gradient(
+      circle,
+      orange 0%,
+      yellow 9%,
+      green 23%,
+      blue 38%,
+      indigo 52%,
+      violet 66%,
+      red 81%,
+      orange 95%,
+      yellow 100%
+    );
+  }
+  20% {
+    background: radial-gradient(
+      circle,
+      orange 0%,
+      yellow 8%,
+      green 22%,
+      blue 37%,
+      indigo 51%,
+      violet 65%,
+      red 80%,
+      orange 94%,
+      yellow 100%
+    );
+  }
+  21% {
+    background: radial-gradient(
+      circle,
+      orange 0%,
+      yellow 7%,
+      green 21%,
+      blue 36%,
+      indigo 50%,
+      violet 64%,
+      red 79%,
+      orange 93%,
+      yellow 100%
+    );
+  }
+  22% {
+    background: radial-gradient(
+      circle,
+      orange 0%,
+      yellow 6%,
+      green 20%,
+      blue 35%,
+      indigo 49%,
+      violet 63%,
+      red 78%,
+      orange 92%,
+      yellow 100%
+    );
+  }
+  23% {
+    background: radial-gradient(
+      circle,
+      orange 0%,
+      yellow 5%,
+      green 19%,
+      blue 34%,
+      indigo 48%,
+      violet 62%,
+      red 77%,
+      orange 91%,
+      yellow 100%
+    );
+  }
+  24% {
+    background: radial-gradient(
+      circle,
+      orange 0%,
+      yellow 4%,
+      green 18%,
+      blue 33%,
+      indigo 47%,
+      violet 61%,
+      red 76%,
+      orange 90%,
+      yellow 100%
+    );
+  }
+  25% {
+    background: radial-gradient(
+      circle,
+      orange 0%,
+      yellow 3%,
+      green 17%,
+      blue 32%,
+      indigo 46%,
+      violet 60%,
+      red 75%,
+      orange 89%,
+      yellow 100%
+    );
+  }
+  26% {
+    background: radial-gradient(
+      circle,
+      orange 0%,
+      yellow 2%,
+      green 16%,
+      blue 31%,
+      indigo 45%,
+      violet 59%,
+      red 74%,
+      orange 88%,
+      yellow 100%
+    );
+  }
+  27% {
+    background: radial-gradient(
+      circle,
+      orange 0%,
+      yellow 1%,
+      green 15%,
+      blue 30%,
+      indigo 44%,
+      violet 58%,
+      red 73%,
+      orange 87%,
+      yellow 100%
+    );
+  }
+  28% {
+    background: radial-gradient(
+      circle,
+      yellow 0%,
+      green 14%,
+      blue 29%,
+      indigo 43%,
+      violet 57%,
+      red 72%,
+      orange 86%,
+      yellow 100%
+    );
+  }
+  29% {
+    background: radial-gradient(
+      circle,
+      yellow 0%,
+      green 13%,
+      blue 28%,
+      indigo 42%,
+      violet 56%,
+      red 71%,
+      orange 85%,
+      yellow 99%,
+      green 100%
+    );
+  }
+  30% {
+    background: radial-gradient(
+      circle,
+      yellow 0%,
+      green 12%,
+      blue 27%,
+      indigo 41%,
+      violet 55%,
+      red 70%,
+      orange 84%,
+      yellow 98%,
+      green 100%
+    );
+  }
+  31% {
+    background: radial-gradient(
+      circle,
+      yellow 0%,
+      green 11%,
+      blue 26%,
+      indigo 40%,
+      violet 54%,
+      red 69%,
+      orange 83%,
+      yellow 97%,
+      green 100%
+    );
+  }
+  32% {
+    background: radial-gradient(
+      circle,
+      yellow 0%,
+      green 10%,
+      blue 25%,
+      indigo 39%,
+      violet 53%,
+      red 68%,
+      orange 82%,
+      yellow 96%,
+      green 100%
+    );
+  }
+  33% {
+    background: radial-gradient(
+      circle,
+      yellow 0%,
+      green 9%,
+      blue 24%,
+      indigo 38%,
+      violet 52%,
+      red 67%,
+      orange 81%,
+      yellow 95%,
+      green 100%
+    );
+  }
+  34% {
+    background: radial-gradient(
+      circle,
+      yellow 0%,
+      green 8%,
+      blue 23%,
+      indigo 37%,
+      violet 51%,
+      red 66%,
+      orange 80%,
+      yellow 94%,
+      green 100%
+    );
+  }
+  35% {
+    background: radial-gradient(
+      circle,
+      yellow 0%,
+      green 7%,
+      blue 22%,
+      indigo 36%,
+      violet 50%,
+      red 65%,
+      orange 79%,
+      yellow 93%,
+      green 100%
+    );
+  }
+  36% {
+    background: radial-gradient(
+      circle,
+      yellow 0%,
+      green 6%,
+      blue 21%,
+      indigo 35%,
+      violet 49%,
+      red 64%,
+      orange 78%,
+      yellow 92%,
+      green 100%
+    );
+  }
+  37% {
+    background: radial-gradient(
+      circle,
+      yellow 0%,
+      green 5%,
+      blue 20%,
+      indigo 34%,
+      violet 48%,
+      red 63%,
+      orange 77%,
+      yellow 91%,
+      green 100%
+    );
+  }
+  38% {
+    background: radial-gradient(
+      circle,
+      yellow 0%,
+      green 4%,
+      blue 19%,
+      indigo 33%,
+      violet 47%,
+      red 62%,
+      orange 76%,
+      yellow 90%,
+      green 100%
+    );
+  }
+  39% {
+    background: radial-gradient(
+      circle,
+      yellow 0%,
+      green 3%,
+      blue 18%,
+      indigo 32%,
+      violet 46%,
+      red 61%,
+      orange 75%,
+      yellow 89%,
+      green 100%
+    );
+  }
+  40% {
+    background: radial-gradient(
+      circle,
+      yellow 0%,
+      green 2%,
+      blue 17%,
+      indigo 31%,
+      violet 45%,
+      red 60%,
+      orange 74%,
+      yellow 88%,
+      green 100%
+    );
+  }
+  41% {
+    background: radial-gradient(
+      circle,
+      yellow 0%,
+      green 1%,
+      blue 16%,
+      indigo 30%,
+      violet 44%,
+      red 59%,
+      orange 73%,
+      yellow 87%,
+      green 100%
+    );
+  }
+  42% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 15%,
+      indigo 29%,
+      violet 43%,
+      red 58%,
+      orange 72%,
+      yellow 86%,
+      green 100%
+    );
+  }
+  43% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 14%,
+      indigo 28%,
+      violet 42%,
+      red 57%,
+      orange 71%,
+      yellow 85%,
+      green 99%,
+      blue 100%
+    );
+  }
+  44% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 13%,
+      indigo 27%,
+      violet 41%,
+      red 56%,
+      orange 70%,
+      yellow 84%,
+      green 98%,
+      blue 100%
+    );
+  }
+  45% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 12%,
+      indigo 26%,
+      violet 40%,
+      red 55%,
+      orange 69%,
+      yellow 83%,
+      green 97%,
+      blue 100%
+    );
+  }
+  46% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 11%,
+      indigo 25%,
+      violet 39%,
+      red 54%,
+      orange 68%,
+      yellow 82%,
+      green 96%,
+      blue 100%
+    );
+  }
+  47% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 10%,
+      indigo 24%,
+      violet 38%,
+      red 53%,
+      orange 67%,
+      yellow 81%,
+      green 95%,
+      blue 100%
+    );
+  }
+  48% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 9%,
+      indigo 23%,
+      violet 37%,
+      red 52%,
+      orange 66%,
+      yellow 80%,
+      green 94%,
+      blue 100%
+    );
+  }
+  49% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 8%,
+      indigo 22%,
+      violet 36%,
+      red 51%,
+      orange 65%,
+      yellow 79%,
+      green 93%,
+      blue 100%
+    );
+  }
+  50% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 7%,
+      indigo 21%,
+      violet 35%,
+      red 50%,
+      orange 64%,
+      yellow 78%,
+      green 92%,
+      blue 100%
+    );
+  }
+  51% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 6%,
+      indigo 20%,
+      violet 34%,
+      red 49%,
+      orange 63%,
+      yellow 77%,
+      green 91%,
+      blue 100%
+    );
+  }
+  52% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 5%,
+      indigo 19%,
+      violet 33%,
+      red 48%,
+      orange 62%,
+      yellow 76%,
+      green 90%,
+      blue 100%
+    );
+  }
+  53% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 4%,
+      indigo 18%,
+      violet 32%,
+      red 47%,
+      orange 61%,
+      yellow 75%,
+      green 89%,
+      blue 100%
+    );
+  }
+  54% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 3%,
+      indigo 17%,
+      violet 31%,
+      red 46%,
+      orange 60%,
+      yellow 74%,
+      green 88%,
+      blue 100%
+    );
+  }
+  55% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 2%,
+      indigo 16%,
+      violet 30%,
+      red 45%,
+      orange 59%,
+      yellow 73%,
+      green 87%,
+      blue 100%
+    );
+  }
+  56% {
+    background: radial-gradient(
+      circle,
+      green 0%,
+      blue 1%,
+      indigo 15%,
+      violet 29%,
+      red 44%,
+      orange 58%,
+      yellow 72%,
+      green 86%,
+      blue 100%
+    );
+  }
+  57% {
+    background: radial-gradient(
+      circle,
+      blue 0%,
+      indigo 14%,
+      violet 28%,
+      red 43%,
+      orange 57%,
+      yellow 71%,
+      green 85%,
+      blue 100%
+    );
+  }
+  58% {
+    background: radial-gradient(
+      circle,
+      blue 0%,
+      indigo 13%,
+      violet 27%,
+      red 42%,
+      orange 56%,
+      yellow 70%,
+      green 84%,
+      blue 99%,
+      indigo 100%
+    );
+  }
+  59% {
+    background: radial-gradient(
+      circle,
+      blue 0%,
+      indigo 12%,
+      violet 26%,
+      red 41%,
+      orange 55%,
+      yellow 69%,
+      green 83%,
+      blue 98%,
+      indigo 100%
+    );
+  }
+  60% {
+    background: radial-gradient(
+      circle,
+      blue 0%,
+      indigo 11%,
+      violet 25%,
+      red 40%,
+      orange 54%,
+      yellow 68%,
+      green 82%,
+      blue 97%,
+      indigo 100%
+    );
+  }
+  61% {
+    background: radial-gradient(
+      circle,
+      blue 0%,
+      indigo 10%,
+      violet 24%,
+      red 39%,
+      orange 53%,
+      yellow 67%,
+      green 81%,
+      blue 96%,
+      indigo 100%
+    );
+  }
+  62% {
+    background: radial-gradient(
+      circle,
+      blue 0%,
+      indigo 9%,
+      violet 23%,
+      red 38%,
+      orange 52%,
+      yellow 66%,
+      green 80%,
+      blue 95%,
+      indigo 100%
+    );
+  }
+  63% {
+    background: radial-gradient(
+      circle,
+      blue 0%,
+      indigo 8%,
+      violet 22%,
+      red 37%,
+      orange 51%,
+      yellow 65%,
+      green 79%,
+      blue 94%,
+      indigo 100%
+    );
+  }
+  64% {
+    background: radial-gradient(
+      circle,
+      blue 0%,
+      indigo 7%,
+      violet 21%,
+      red 36%,
+      orange 50%,
+      yellow 64%,
+      green 78%,
+      blue 93%,
+      indigo 100%
+    );
+  }
+  65% {
+    background: radial-gradient(
+      circle,
+      blue 0%,
+      indigo 6%,
+      violet 20%,
+      red 35%,
+      orange 49%,
+      yellow 63%,
+      green 77%,
+      blue 92%,
+      indigo 100%
+    );
+  }
+  66% {
+    background: radial-gradient(
+      circle,
+      blue 0%,
+      indigo 5%,
+      violet 19%,
+      red 34%,
+      orange 48%,
+      yellow 62%,
+      green 76%,
+      blue 91%,
+      indigo 100%
+    );
+  }
+  67% {
+    background: radial-gradient(
+      circle,
+      blue 0%,
+      indigo 4%,
+      violet 18%,
+      red 33%,
+      orange 47%,
+      yellow 61%,
+      green 75%,
+      blue 90%,
+      indigo 100%
+    );
+  }
+  68% {
+    background: radial-gradient(
+      circle,
+      blue 0%,
+      indigo 3%,
+      violet 17%,
+      red 32%,
+      orange 46%,
+      yellow 60%,
+      green 74%,
+      blue 89%,
+      indigo 100%
+    );
+  }
+  69% {
+    background: radial-gradient(
+      circle,
+      blue 0%,
+      indigo 2%,
+      violet 16%,
+      red 31%,
+      orange 45%,
+      yellow 59%,
+      green 73%,
+      blue 88%,
+      indigo 100%
+    );
+  }
+  70% {
+    background: radial-gradient(
+      circle,
+      blue 0%,
+      indigo 1%,
+      violet 15%,
+      red 30%,
+      orange 44%,
+      yellow 58%,
+      green 72%,
+      blue 87%,
+      indigo 100%
+    );
+  }
+  71% {
+    background: radial-gradient(
+      circle,
+      indigo 0%,
+      violet 14%,
+      red 29%,
+      orange 43%,
+      yellow 57%,
+      green 71%,
+      blue 86%,
+      indigo 100%
+    );
+  }
+  72% {
+    background: radial-gradient(
+      circle,
+      indigo 0%,
+      violet 13%,
+      red 28%,
+      orange 42%,
+      yellow 56%,
+      green 70%,
+      blue 85%,
+      indigo 99%,
+      violet 100%
+    );
+  }
+  73% {
+    background: radial-gradient(
+      circle,
+      indigo 0%,
+      violet 12%,
+      red 27%,
+      orange 41%,
+      yellow 55%,
+      green 69%,
+      blue 84%,
+      indigo 98%,
+      violet 100%
+    );
+  }
+  74% {
+    background: radial-gradient(
+      circle,
+      indigo 0%,
+      violet 11%,
+      red 26%,
+      orange 40%,
+      yellow 54%,
+      green 68%,
+      blue 83%,
+      indigo 97%,
+      violet 100%
+    );
+  }
+  75% {
+    background: radial-gradient(
+      circle,
+      indigo 0%,
+      violet 10%,
+      red 25%,
+      orange 39%,
+      yellow 53%,
+      green 67%,
+      blue 82%,
+      indigo 96%,
+      violet 100%
+    );
+  }
+  76% {
+    background: radial-gradient(
+      circle,
+      indigo 0%,
+      violet 9%,
+      red 24%,
+      orange 38%,
+      yellow 52%,
+      green 66%,
+      blue 81%,
+      indigo 95%,
+      violet 100%
+    );
+  }
+  77% {
+    background: radial-gradient(
+      circle,
+      indigo 0%,
+      violet 8%,
+      red 23%,
+      orange 37%,
+      yellow 51%,
+      green 65%,
+      blue 80%,
+      indigo 94%,
+      violet 100%
+    );
+  }
+  78% {
+    background: radial-gradient(
+      circle,
+      indigo 0%,
+      violet 7%,
+      red 22%,
+      orange 36%,
+      yellow 50%,
+      green 64%,
+      blue 79%,
+      indigo 93%,
+      violet 100%
+    );
+  }
+  79% {
+    background: radial-gradient(
+      circle,
+      indigo 0%,
+      violet 6%,
+      red 21%,
+      orange 35%,
+      yellow 49%,
+      green 63%,
+      blue 78%,
+      indigo 92%,
+      violet 100%
+    );
+  }
+  80% {
+    background: radial-gradient(
+      circle,
+      indigo 0%,
+      violet 5%,
+      red 20%,
+      orange 34%,
+      yellow 48%,
+      green 62%,
+      blue 77%,
+      indigo 91%,
+      violet 100%
+    );
+  }
+  81% {
+    background: radial-gradient(
+      circle,
+      indigo 0%,
+      violet 4%,
+      red 19%,
+      orange 33%,
+      yellow 47%,
+      green 61%,
+      blue 76%,
+      indigo 90%,
+      violet 100%
+    );
+  }
+  82% {
+    background: radial-gradient(
+      circle,
+      indigo 0%,
+      violet 3%,
+      red 18%,
+      orange 32%,
+      yellow 46%,
+      green 60%,
+      blue 75%,
+      indigo 89%,
+      violet 100%
+    );
+  }
+  83% {
+    background: radial-gradient(
+      circle,
+      indigo 0%,
+      violet 2%,
+      red 17%,
+      orange 31%,
+      yellow 45%,
+      green 59%,
+      blue 74%,
+      indigo 88%,
+      violet 100%
+    );
+  }
+  84% {
+    background: radial-gradient(
+      circle,
+      indigo 0%,
+      violet 1%,
+      red 16%,
+      orange 30%,
+      yellow 44%,
+      green 58%,
+      blue 73%,
+      indigo 87%,
+      violet 100%
+    );
+  }
+  85% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 15%,
+      orange 29%,
+      yellow 43%,
+      green 57%,
+      blue 72%,
+      indigo 86%,
+      violet 100%
+    );
+  }
+  86% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 14%,
+      orange 28%,
+      yellow 42%,
+      green 56%,
+      blue 71%,
+      indigo 85%,
+      violet 99%,
+      red 100%
+    );
+  }
+  87% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 13%,
+      orange 27%,
+      yellow 41%,
+      green 55%,
+      blue 70%,
+      indigo 84%,
+      violet 98%,
+      red 100%
+    );
+  }
+  88% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 12%,
+      orange 26%,
+      yellow 40%,
+      green 54%,
+      blue 69%,
+      indigo 83%,
+      violet 97%,
+      red 100%
+    );
+  }
+  89% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 11%,
+      orange 25%,
+      yellow 39%,
+      green 53%,
+      blue 68%,
+      indigo 82%,
+      violet 96%,
+      red 100%
+    );
+  }
+  90% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 10%,
+      orange 24%,
+      yellow 38%,
+      green 52%,
+      blue 67%,
+      indigo 81%,
+      violet 95%,
+      red 100%
+    );
+  }
+  91% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 9%,
+      orange 23%,
+      yellow 37%,
+      green 51%,
+      blue 66%,
+      indigo 80%,
+      violet 94%,
+      red 100%
+    );
+  }
+  92% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 8%,
+      orange 22%,
+      yellow 36%,
+      green 50%,
+      blue 65%,
+      indigo 79%,
+      violet 93%,
+      red 100%
+    );
+  }
+  93% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 7%,
+      orange 21%,
+      yellow 35%,
+      green 49%,
+      blue 64%,
+      indigo 78%,
+      violet 92%,
+      red 100%
+    );
+  }
+  94% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 6%,
+      orange 20%,
+      yellow 34%,
+      green 48%,
+      blue 63%,
+      indigo 77%,
+      violet 91%,
+      red 100%
+    );
+  }
+  95% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 5%,
+      orange 19%,
+      yellow 33%,
+      green 47%,
+      blue 62%,
+      indigo 76%,
+      violet 90%,
+      red 100%
+    );
+  }
+  96% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 4%,
+      orange 18%,
+      yellow 32%,
+      green 46%,
+      blue 61%,
+      indigo 75%,
+      violet 89%,
+      red 100%
+    );
+  }
+  97% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 3%,
+      orange 17%,
+      yellow 31%,
+      green 45%,
+      blue 60%,
+      indigo 74%,
+      violet 88%,
+      red 100%
+    );
+  }
+  98% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 2%,
+      orange 16%,
+      yellow 30%,
+      green 44%,
+      blue 59%,
+      indigo 73%,
+      violet 87%,
+      red 100%
+    );
+  }
+  99% {
+    background: radial-gradient(
+      circle,
+      violet 0%,
+      red 1%,
+      orange 15%,
+      yellow 29%,
+      green 43%,
+      blue 58%,
+      indigo 72%,
+      violet 86%,
+      red 100%
+    );
+  }
+  100% {
+    background: radial-gradient(
+      circle,
+      red 0%,
+      orange 14%,
+      yellow 28%,
+      green 42%,
+      blue 57%,
+      indigo 71%,
+      violet 85%,
+      red 100%
+    );
+  }
+}
